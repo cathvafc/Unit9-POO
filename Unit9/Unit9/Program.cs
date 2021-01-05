@@ -26,6 +26,16 @@ namespace Unit9
             empleado1.PagarImpuestos();
             Console.WriteLine("Su sueldo es: {0}", empleado1.getSueldo());
             Console.WriteLine("Su nombre es: {0}", empleado1.getNombre());
+
+
+
+            Operaciones operacion1 = new Operaciones(6,3);
+
+            Console.WriteLine("{0}", operacion1.Suma());
+            Console.WriteLine("{0}", operacion1.Resta());
+            Console.WriteLine("{0}",operacion1.Multiplicación());
+            Console.WriteLine("{0}",operacion1.Division());
+  
         }
     }
 }
