@@ -4,39 +4,35 @@ using System.Text;
 
 namespace Unit9
 {
-    class Alumno
+    class Empleado
     {
-
+        private int sueldo = 0;
         private string nombre = "";
-      
-        private int edad = 0; 
-
-        public Alumno(string nombre, int edad)
+        public Empleado(string nombre, int sueldo)
         {
-            this.edad = edad;
             this.nombre = nombre;
-
+            this.sueldo = sueldo;
         }
 
-        public  void MayorDeEdad()
+        public void PagarImpuestos()
         {
-            if (edad >= 18)
+            if (sueldo > 3000)
             {
-                Console.WriteLine(" Es mayor de edad");
+                Console.WriteLine("Tiene que pagar impuestos");
             }
             else
             {
-                Console.WriteLine(" No es mayor de edad");
+                Console.WriteLine("No tiene que pagar impuestos");
             }
         }
 
-        public int getEdad()
+        public int getSueldo()
         {
-            return edad;
+            return sueldo;
         }
-        public void setEdad(int edad) 
+        public void setSueldo(int sueldo)
         {
-            this.edad = edad; 
+            this.sueldo = sueldo;
         }
         public string getNombre()
         {
@@ -46,6 +42,5 @@ namespace Unit9
         {
             this.nombre = nombre;
         }
-
     }
 }
