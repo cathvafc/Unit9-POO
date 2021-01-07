@@ -7,7 +7,7 @@ namespace Unit9
     class Password
     {
         Random rdn = new Random();
-        private string contraseña = "";
+    
         private int longitudContraseña = 8;
         private char letra;
 
