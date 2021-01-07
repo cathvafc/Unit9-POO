@@ -4,9 +4,11 @@ namespace Unit9
 {
     class Program
     {
-        //static void Main(string[] args)
-        //{
+        static void Main(string[] args)
+        {
+            Password pass1 = new Password(10);
 
+            Console.WriteLine("La contraseña es: {0}", pass1.GenerarContraseña());
         //    //Alumno alumno = new Alumno("Pepito", 18);
         //    //alumno.MayorDeEdad();
         //    //Console.WriteLine("Su edad es: {0}", alumno.getEdad());
@@ -36,6 +38,6 @@ namespace Unit9
         //    //Console.WriteLine("{0}", operacion1.Multiplicación());
         //    //Console.WriteLine("{0}", operacion1.Division());
 
-        //}
+        }
     }
 }
